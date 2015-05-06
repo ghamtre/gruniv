@@ -14,5 +14,8 @@
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>
-
+<div class="form-group">
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control", :autofocus => true %>
+</div>
 <%= render "devise/shared/links" %>
