@@ -24,6 +24,10 @@
 		<li><%= link_to 'Sign in', new_user_session_path %></li>
 	</ul>
 <% end %>
+<% if link.user == current_user %>
+  <td><%= link_to 'Edit', edit_link_path(@link) %></td>
+  <td><%= link_to 'Destroy', @link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<% end %>
 <%= yield %>
 
 </body>
