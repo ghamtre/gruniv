@@ -9,7 +9,7 @@ class PinsController < ApplicationController
 	end
 
 	def new
-		@pin = Pin.new
+		@pin = current_user.pins.build
 	end
 
 	def create
@@ -35,7 +35,12 @@ class PinsController < ApplicationController
 
 	def destroy
 		@pin.destroy
-		redirect_to pin_path
+		redirect_to :controller => 'pins'
+	end
+	
+	def upvote
+		@pin.upvote_by current_user
+		redirect_to :back
 	end
 
 	private

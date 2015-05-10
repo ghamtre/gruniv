@@ -10,8 +10,11 @@
 				.row
 					.col-md-6
 						%p.user
-							Creado por
-							= @pin.user.email
+							Ofrecido por
+							= @pin.user.name
+						%p.price 
+							$ 
+							= @pin.price
 					.col-md-6
 						.btn-group.pull-right
 							= link_to like_pin_path(@pin), method: :put, class: "btn btn-default" do

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>GRUNIV</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header class="navbar navbar-default" role="navigation">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="navbar-brand" id="logo">
+            <%= link_to "GRUNIV", root_path %>
+          </div>
+          <nav class="collapse navbar-collapse navbar-ex1-collapse">
+            <% if user_signed_in? %>
+            <% if current_page? pins_path %>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <%= link_to new_pin_path do %>
+                    <i class="glyphicon glyphicon-pushpin"> Pin</i>
+                  <% end %>
+                </li>
+                <li>
+                  <a href="/" >
+                    <span class="glyphicon glyphicon-magnet"></span> Enlaces
+                    </a>
+                </li>
+            </ul>
+            <% else %>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <%= link_to new_link_path do %>
+                    <i class="glyphicon glyphicon-magnet"> Enlace</i>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to pins_path do %>
+                    <span class="glyphicon glyphicon-list-alt"></span> Clasificados
+                    <% end %>
+                </li>
+                <li>
+                  <%= link_to edit_user_registration_path do %>
+                    <i class="glyphicon glyphicon-user"> Cuenta</i>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to destroy_user_session_path, :method => :delete do %>
+                    <i class="glyphicon glyphicon-ban-circle"> Desconectarse</i>
+                  <% end %>
+                </li>
+              </ul>
+              <% end %>
+            <% else %>
+              <ul class="nav navbar-nav pull-right">
+                <li>
+                  <%= link_to new_user_registration_path do %>
+                    <i class="glyphicon glyphicon-pencil"> Registrarse</i>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to new_user_session_path do %>
+                    <i class="glyphicon glyphicon-globe"> Conectarse</i>
+                  <% end %>
+                </li>
+              </ul>
+            <% end %>
+          </nav>
+        </div>
+      </div>
+            <div class="col-md-20 center-block" id="content">
+              <%= yield :landing %>
+            </div>
+    </header>
+    <% if user_signed_in? %>
+      <script>
+        window.scrollback = {"room":"gruniv-chat","form":"canvas","minimize":true};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=(location.protocol === "https:" ? "https:" : "http:") + "//scrollback.io/client.min.js";d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script"));
+      </script>
+    <% end %>
+    <div class="container" id="main_content">
+      <% flash.each do |name, msg| %>
+        <%= content_tag(:div, msg, class: "alert alert-info") %>
+      <% end %>
+      <div class="col-md-12 center-block" id="content">
+        <%= yield :board %>
+      </div>
+      <div class="col-md-9 center-block" id="content">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>

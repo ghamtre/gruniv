@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.1'
 
+gem 'binding_of_caller'
 gem 'masonry-rails'
 gem 'haml' 
 gem 'high_voltage', '~> 2.3.0'
