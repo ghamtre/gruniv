@@ -1,7 +1,7 @@
-<%= form_for(@link) do |f| %>
+<%= form_for @link, html: { multipart: true } do |f| %>
   <% if @link.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@link.errors.count, "error") %> prohibited this link from being saved:</h2>
+      <h2><%= pluralize(@link.errors.count, "error") %> prohibido guardar este enlace:</h2>
 
       <ul>
       <% @link.errors.full_messages.each do |message| %>
@@ -11,15 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+  <div class="form-group">
+    <%= f.label "Titulo" %><br>
+    <%= f.text_field :title, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+  <div class="form-group">
+    <%= f.label "Sitio web" %><br>
+    <%= f.text_field :url, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <br>
+  <div class="field">
+    <%= f.label "Imagen" %> <br>
+    <%= f.file_field :image %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= f.submit "Enviar", class: "btn btn-lg btn-primary" %>
   </div>
 <% end %>
