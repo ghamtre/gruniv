@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.1.4'
 
 gem 'binding_of_caller'
 gem 'masonry-rails'
