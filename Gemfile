@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.4'
 
 gem 'binding_of_caller'
-gem 'masonry-rails'
+gem 'masonry-rails', '~> 0.2.0'
 gem 'haml' 
 gem 'high_voltage', '~> 2.3.0'
 gem 'activevalidators'
@@ -45,7 +45,7 @@ group :assets do
 gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
-gem 'libv8', '3.16.14.3'
+gem 'libv8'
 
 end
 

@@ -131,4 +131,8 @@ textarea {
  *
  *= require .
  *= require_self
+ *= require jquery-ui
+ *= require 'masonry/transitions'
+ *= require magnific-popup
+ *= require_tree .
  */
