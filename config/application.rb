@@ -22,5 +22,15 @@ module Raddit
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.paperclip_defaults = {
+        storage: :azure_storage,
+        path: ":class/:id/:attachment/:style/:filename",
+        azure_credentials: {
+          account_name: Rails.application.secrets.azure_credentials['account_name'],
+          access_key: Rails.application.secrets.azure_credentials['access_key']
+        },
+        azure_container: "gruniv",
+        url: ":azure_domain_url",
+    }
   end
 end
