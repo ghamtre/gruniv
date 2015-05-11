@@ -1,5 +1,5 @@
 - content_for :board do
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application'
   #pins.transitions-enabled
     - @pins.each do |pin|
       .box.panel.panel-default
