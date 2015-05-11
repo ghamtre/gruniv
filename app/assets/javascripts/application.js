@@ -14,4 +14,12 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require masonry/jquery.masonry
+//= require jquery.turbolinks
+//= require jquery_ujs
+//= require bootstrap
+//= require masonry/jquery.imagesloaded.min
+//= require masonry/jquery.infinitescroll.min
+//= require masonry/modernizr-transitions
+//= require underscore
+//= require gmaps/google
 //= require_tree .
