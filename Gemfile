@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.1.4'
 
+gem 'figaro'
+gem "paperclip-dropbox", ">= 1.1.7"
 gem 'binding_of_caller'
 gem 'masonry-rails', '~> 0.2.0'
 gem 'haml' 
