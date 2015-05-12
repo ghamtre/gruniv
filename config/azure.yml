@@ -1,9 +1,0 @@
-development:
-    account_name: gruniv
-    access_key: kMdwzLBzZCIpun4mLmf7IX390gu9ikKcNLZhfv3YZJpxDhRkrTlSCUlrpdcMrfgugCKa2iw7ldGxKI/HiK/ZhA==
-staging:
-     account_name: gruniv
-    access_key: kMdwzLBzZCIpun4mLmf7IX390gu9ikKcNLZhfv3YZJpxDhRkrTlSCUlrpdcMrfgugCKa2iw7ldGxKI/HiK/ZhA==
-production:
-     account_name: gruniv
-    access_key: kMdwzLBzZCIpun4mLmf7IX390gu9ikKcNLZhfv3YZJpxDhRkrTlSCUlrpdcMrfgugCKa2iw7ldGxKI/HiK/ZhA==
