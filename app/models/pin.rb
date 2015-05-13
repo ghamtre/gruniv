@@ -9,5 +9,5 @@ has_attached_file :image, :styles => { large: "600x600>", medium: "300x300>", th
                               user_id: ENV['USER_ID'],
                               access_type: 'app_folder'}
 validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
-validates_attachment_presence :image
+validates_attachment_presence :image 
 end

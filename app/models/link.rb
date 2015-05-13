@@ -10,6 +10,8 @@ class Link < ActiveRecord::Base
                               user_id: ENV['USER_ID'],
                               access_type: 'app_folder'}
     validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+    validates_attachment_presence :image
+    validates_presence_of :title, :url 
   include PgSearch
   pg_search_scope :search, against: [:url, :title],
     using: {tsearch: {dictionary: "spanish"}},

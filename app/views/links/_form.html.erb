@@ -1,7 +1,7 @@
 <%= form_for @link, html: { multipart: true } do |f| %>
   <% if @link.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@link.errors.count, "error") %> prohibido guardar este enlace:</h2>
+      <h2><%= pluralize(@link.errors.count, "Errores") %>:</h2>
 
       <ul>
       <% @link.errors.full_messages.each do |message| %>
