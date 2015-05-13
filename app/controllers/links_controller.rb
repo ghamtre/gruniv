@@ -6,12 +6,14 @@ class LinksController < ApplicationController
   # GET /links
   # GET /links.json
   def index
-    @links = Link.all
+    @links = Link.text_search(params[:query]).page(params[:page]).per_page(15).order("created_at DESC")
   end
 
   # GET /links/1
   # GET /links/1.json
   def show
+    @link = Link.find(params[:id])
+    @comment = Comment.new(link_id: @link.id)
   end
 
   # GET /links/new

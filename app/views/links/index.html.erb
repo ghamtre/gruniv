@@ -1,3 +1,9 @@
+<%= form_tag links_path, method: :get do%>
+<p>
+  <%= text_field_tag :query, params[:query] %>
+  <%= submit_tag "Buscar", title: nil%>
+</p>
+<% end %>
 <% @links.each do |link| %>
   <div class="link row clearfix">
     <h2>

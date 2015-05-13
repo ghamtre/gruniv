@@ -86,7 +86,7 @@
 	}
 	.pin_image {
 		img {
-			max-width: 100%;
+			max-width: 50%;
 			width: 100%;
 			display: block;
 			margin: 0 auto;
@@ -117,6 +117,8 @@
 textarea {
 	min-height: 250px;
 }
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
