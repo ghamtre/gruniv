@@ -8,7 +8,7 @@
   <div class="link row clearfix">
     <h2>
       <%= link_to link.title, link %><br>
-      <small class="author"> Subido hace <%= time_ago_in_words(link.created_at) %> por <%= link.user.name %></small>
+      <small class="author"> Compartido hace <%= time_ago_in_words(link.created_at) %> por <%= link.user.name %></small>
     </h2>
 
     <div class="btn-group">
