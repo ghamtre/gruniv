@@ -24,4 +24,8 @@ class Link < ActiveRecord::Base
       all
     end
   end
+
+  def subregion_options
+    render partial: 'subregion_select'
+  end
 end

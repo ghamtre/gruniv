@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.4' 
 
+gem 'carmen-rails'
 gem 'pg_search'
 gem 'texticle'
 gem 'will_paginate'
