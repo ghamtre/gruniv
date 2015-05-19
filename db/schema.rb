@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150519000540) do
+ActiveRecord::Schema.define(version: 20150519010919) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20150519000540) do
     t.datetime "image_updated_at"
     t.string   "country_code"
     t.string   "state_code"
+    t.string   "city"
   end
 
   add_index "links", ["user_id"], name: "index_links_on_user_id", using: :btree
