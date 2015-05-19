@@ -2,7 +2,15 @@ class LinksController < ApplicationController
   before_action :set_link, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :authorized_user, only: [:edit, :update, :destroy]
+  
+  before_filter do
+    locale = params[:locale]
+    Carmen.i18n_backend.locale = locale if locale
+  end
 
+  def subregion_options
+    render partial: 'subregion_select'
+  end
   # GET /links
   # GET /links.json
   def index
@@ -89,6 +97,6 @@ class LinksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def link_params
-      params.require(:link).permit(:title, :url, :image)
+      params.require(:link).permit(:title, :url, :image, :country_code, :state_code)
     end
 end
