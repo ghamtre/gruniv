@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   get '/links/subregion_options' => 'links#subregion_options'
   resources :comments
-  resources :pins 
+  resources :pins
+  resources :links 
   devise_for :users
   resources :links do
     member do

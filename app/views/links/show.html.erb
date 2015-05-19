@@ -2,7 +2,7 @@
   <h1><a href="<%= @link.url %>"><%= @link.title %></a><br><small>Compartido por <%= @link.user.name %></small></h1>
   <%= image_tag @link.image.url(:large) %>
   <br>
- <small>Ubicación: <%= @link.state_code %></small>, <small><%= @link.country_code %></small>
+ <small>Ubicación: <%= @link.ciudad %> <%= @link.state_code %></small>, <small><%= @link.country_code %></small>
 </div>
 
 <div class="btn-group">
