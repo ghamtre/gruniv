@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  get '/links/subregion_options' => 'links#subregion_options'
   resources :comments
   resources :pins 
   devise_for :users
-  get '/orders/subregion_options' => 'orders#subregion_options'
   resources :links do
     member do
       put "like", to: "links#upvote"

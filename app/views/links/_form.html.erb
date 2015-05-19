@@ -26,21 +26,16 @@
   </div>
   <br>
   <div class="field">
-  <%= f.label :country_code %><br />
-  <%= f.country_select :country_code, priority: %w(US CA), prompt: 'Please select a country' %>
-  </div>
+  <%= f.label "País" %><br />
+  <%= f.country_select :country_code, priority: %w(MX US), prompt: 'Eliga su País.' %>
   <br>
-  <div id="order_state_code_wrapper">
-  <% parent_region ||= params[:parent_region] %>
-  <% country = Carmen::Country.coded(parent_region) %>
-  <% if country.nil? %>
-    <em>Please select a country above</em>
-  <% elsif country.subregions? %>
-    <%= subregion_select(:order, :state_code, parent_region) %>
-  <% else %>
-    <%= text_field(:order, :state_code) %>
-  <% end %>
-</div>
+  <%= f.label "Estado" %><br />
+  <%= render partial: 'subregion_select', locals: {parent_region: f.object.country_code} %>
+  </div>
+  <div class="form-group">
+    <%= f.label "Ciudad" %><br>
+    <%= f.text_field :city, class: "form-control" %>
+  </div>
   <br>
   <div class="form-group">
     <%= f.submit "Enviar", class: "btn btn-lg btn-primary" %>
