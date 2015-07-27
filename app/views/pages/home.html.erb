@@ -1,697 +1,635 @@
 <!doctype html>
-<html>
-<% content_for :landing do %>
+<!--[if lt IE 7]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>GRUNIV</title>
-<link rel="icon" href="favicon.ico" type="image/ico">
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/linecons.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
-<link href="css/animate.css" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>Gruniv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png">
 
-<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/rs-plugin/css/settings.css">
 
-<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/wow.js"></script>
-<script type="text/javascript" src="js/classie.js"></script>
+    <link rel="stylesheet" href="css/freeze.css">
 
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
 
-<script type="text/javascript">
-	$(document).ready(function(e) {
-        $('.res-nav_click').click(function(){
-		$('ul.toggle').slideToggle(600)	
-			});	
-			
-	$(document).ready(function() {
-$(window).bind('scroll', function() {
-         if ($(window).scrollTop() > 0) {
-             $('#header_outer').addClass('fixed');
-         }
-         else {
-             $('#header_outer').removeClass('fixed');
-         }
-    });
-	
-	  });
-	  
+    <script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
 
-		    });	
-function resizeText() {
-	var preferredWidth = 767;
-	var displayWidth = window.innerWidth;
-	var percentage = displayWidth / preferredWidth;
-	var fontsizetitle = 25;
-	var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
-	$(".divclass").css("font-size", newFontSizeTitle)
-}
-</script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
 </head>
+
 <body>
-<%= yield %>
-<!--Header_section-->
 
-<!--Header_section--> 
-
-<!--Top_content-->
-<section id="top_content" class="top_cont_outer">
-  <div class="top_cont_inner">
-    <div class="container">
-      <div class="top_content">
-        <div class="row">
-          <div class="col-lg-5 col-sm-7">
-            <div class="top_left_cont flipInY wow animated">
-              <h3>¡Simple &amp; sencillo! </h3>
-              <h2>Descubre &amp; comparte entre universitarios</h2>
-              <p> GRUNIV es una plataforma que te permite compartir información con otros universitarios, al tiempo que te enterás de nuevos eventos y conoces gente nueva en tu ciudad.</p>
-              <a href="#service" class="learn_more2">Ver</a> </div>
-          </div>
-          <div class="col-lg-7 col-sm-5"> </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Top_content--> 
-
-<!--Service-->
-<section  id="service">
-  <div class="container">
-    <h2>Beneficios</h2>
-    <div class="service_area">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="service_block">
-            <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa-flash"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Información al momento</h3>
-            <p class="animated fadeInDown wow">Todo el contenido que se pubica en GRUNIV se hace de manera inmediata y teniendo como prioridad el nuevo contenido, por tanto toda la información que encuentres estará al día.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service_block">
-            <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa-comments"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Social</h3>
-            <p class="animated fadeInDown wow">GRUNIV permite tener conversaciones de chat, crear comentarios y compartir enlaces de interés, lo que lo convierte en una comunidad constructiva y abierta.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service_block">
-            <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa-shield"></i></span> </div>
-            <h3 class="animated fadeInUp wow">Seguridad</h3>
-            <p class="animated fadeInDown wow">Toda la información sensible es encriptada y almacenada de manera segura en nuestros servidores, para que puedas compartir y divertirte sin preocuparte.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Service-->
-
-<section id="work_outer"><!--main-section-start-->
-<div class="top_cont_latest">
-  <div class="container">
-    <h2>Servicios</h2>
-    <div class="work_section">
-      <div class="row">
-        <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-doc"></i> </div>
-            <div class="service-list-col2">
-              <h3>Clasificados</h3>
-              <p>¿Tienes algo que vender, ó estás buscando algo en especial?</p><p>En GRUNIV tenemos una sección especial para clasificados.</p>
+    <div class="pre-loader">
+        <div class="load-con">
+            <img src="img/freeze/logo.png" class="animated fadeInDown" alt="">
+            <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
             </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-comment"></i> </div>
-            <div class="service-list-col2">
-              <h3>Grupos de chat</h3>
-              <p>Los chats en GRUNIV están pensados para humanos,</p><p>y es por ello que puedes unirte ó crear grupos de tú interés.</p>
-            </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-database"></i> </div>
-            <div class="service-list-col2">
-              <h3>Servidores 24/7</h3>
-              <p>GRUNIV cuenta con el apoyo de PasS, lo que le permite estar enlinea sin</p><p> importar la cantidad de usuarios conectados ni un horario en especifico.</p>
-            </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-cog"></i> </div>
-            <div class="service-list-col2">
-              <h3>Soporte técnico</h3>
-              <p>Contamos con apoyo de soporte técnico vía e-mail, en menos de 48 horas.</p>
-            </div>
-          </div>
-          <div class="work_bottom"> <span>¿Te ha surgido una duda?</span> <a href="#contact" class="contact_btn">¡Contáctanos!</a> </div>
         </div>
-        <figure class="col-lg-6 col-sm-6  text-right wow fadeInUp delay-02s"> </figure>
-      </div>
     </div>
-  </div>
-  <!--<div class="work_pic"><img src="img/dashboard_pic.png" alt=""></div>-->
-  </div>
-</section>
-<!--main-section-end--> 
-
-<!--new_portfolio--> 
-
-<!-- Portfolio -->
-<section id="Portfolio" class="content"> 
-  
-  <!-- Container -->
-  <div class="container portfolio-title"> 
-    
-    <!-- Section Title -->
-    <div class="section-title">
-      <h2>Fotos compartidas en GRUNIV</h2>
-    </div>
-    <!--/Section Title --> 
-    
-  </div>
-  <!-- Container -->
-  
-  <div class="portfolio-top"></div>
-  
-  <!-- Portfolio Plus Filters -->
-  <div class="portfolio"> 
-    
-    <!-- Portfolio Filters -->
-    <div id="filters" class="sixteen columns">
-      <ul class="clearfix">
-        <li><a id="all" href="#" data-filter="*" class="active">
-          <h5>Todas</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".branding">
-          <h5>Marcas</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".design">
-          <h5>Eventos</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".photography">
-          <h5>Universidades</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".videography">
-          <h5>Clasificados</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".web">
-          <h5>Red</h5>
-          </a></li>
-      </ul>
-    </div>
-    <!--/Portfolio Filters --> 
-    
-    <!-- Portfolio Wrap -->
-    <div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap"> 
-      
-      <!-- Portfolio Item With PrettyPhoto  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   videography isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic1.jpg"  alt="Portfolio 1"> </div>
-        <a title="Starbucks Coffee" rel="prettyPhoto[galname]" href="http://clapat.ro/themes/newave/images/portfolio/portfolio2.jpg">
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Leica Camera</h4>
-            <p class="project-categories">Videography</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item With PrettyPhoto  --> 
-      
-      <!-- Portfolio Item Video Expander  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic2.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-video-expander.html" title="Open Project"></a> </div>
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Foto Template</h4>
-            <p class="project-categories">Design</p>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item Video Expander  --> 
-      
-      <!-- Portfolio Item Normal Expander -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-1.html" title="Open Project"></a> </div>
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Sony Phone</h4>
-            <p class="project-categories">Design</p>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item Normal Expander --> 
-      
-      <!-- Portfolio Item FullScreen Expander -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  photography  branding web isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-fullscreen-expander-1.html" title="Open Project"></a> </div>
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Nike Shoes</h4>
-            <p class="project-categories">Photography, Web, Branding</p>
-          </div>
-        </div>
-      </div>
-      <!-- Portfolio Item FullScreen Expander --> 
-      
-      <!-- Portfolio Item FullScreen Expander -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-fullscreen-expander-2.html" title="Open Project"></a> </div>
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Vinyl Record</h4>
-            <p class="project-categories">Design</p>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item FullScreen Expander --> 
-      
-      <!-- Portfolio Item Normal Expander -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="open-project-link"> <a class="open-project" href="http://clapat.ro/themes/newave/project-normal-expander-2.html" title="Open Project"></a> </div>
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">iPhone</h4>
-            <p class="project-categories">Web</p>
-          </div>
-        </div>
-      </div>
-      <!--/Portfolio Item Normal Expander --> 
-      
-      <!-- Portfolio Item External Project  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>
-        <a href="http://clapat.ro/themes/newave/project-external-1.html" class="external">
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Nexus Phone</h4>
-            <p class="project-categories">Design, Web</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item External Project  --> 
-      
-      <!-- Portfolio Item With PrettyPhoto  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   photography isotope-item">
-        <div class="portfolio-image"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>
-        <a title="Stereo Headphones" rel="prettyPhoto[galname]" href="http://clapat.ro/themes/newave/images/portfolio/portfolio8.jpg">
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">Art Frame</h4>
-            <p class="project-categories">Photography</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item With PrettyPhoto  --> 
-      
-    </div>
-    <!--/Portfolio Wrap --> 
-    
-  </div>
-  <!--/Portfolio Plus Filters -->
-  
-  <div class="portfolio-bottom"></div>
-  
-  <!-- Project Page Holder-->
-  <div id="project-page-holder">
-    <div class="clear"></div>
-    <div id="project-page-data"></div>
-  </div>
-  <!--/Project Page Holder--> 
-  
-</section>
-<!--/Portfolio --> 
-
-<!--new_portfolio--> 
-
-<!--
-<section class="main-section paddind" id="Portfolio">
-	<div class="container">
-    	<h2>Portfolio</h2>
-    	<h6>Fresh portfolio of designs that will keep you wanting more.</h6>
-	</div>
-    
-    
-</section>   
-
--->
-
-<section class="main-section" id="client_outer"><!--main-section client-part-start-->
-  <h2>Testimonios</h2>
-  <div class="client_area ">
-    <div class="client_section animated  fadeInUp wow">
-      <div class="client_profile">
-        <div class="client_profile_pic"><img src="img/veronica.jpg" alt=""></div>
-        <h3>Veronica Arias</h3>
-        <span>Graduada en Ing. Civil</span> </div>
-      <div class="quote_section">
-        <div class="quote_arrow"></div>
-        <p><b><img src="img/quote_sign_left.png" alt=""></b>La interfaz de usuario es bastante amigable, sin dudas es una plataforma útil para los estudiantes y puede ser una alternativa a las que ya existen.<small><img src="img/quote_sign_right.png" alt=""></small> </p>
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="client_section animated  fadeInDown wow">
-      <div class="client_profile flt">
-        <div class="client_profile_pic"><img src="img/samuel.jpg" alt=""></div>
-        <h3> Samuel Pulido </h3>
-        <span>Estudiante de Ing. Mecatrónica</span> </div>
-      <div class="quote_section flt">
-        <div class="quote_arrow2"></div>
-        <p><b><img src="img/quote_sign_left.png" alt=""></b>Es una página con muchísimo potencial, mucho más didáctica de lo que fue alguna vez Facebook en sus comienzos en Harvard University, me siento cómodo y la plataforma es muy intuitiva.<small><img src="img/quote_sign_right.png" alt=""></small> </p>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-</section>
-<!--main-section client-part-end-->
-
-<div class="c-logo-part"><!--c-logo-part-start-->
-  <div class="container">
-    <ul class="delay-06s animated  bounce wow">
-      <li><a href="javascript:void(0)"><img src="img/c-liogo1.png" alt=""></a></li>
-      <li><a href="javascript:void(0)"><img src="img/c-liogo2.png" alt=""></a></li>
-      <li><a href="javascript:void(0)"><img src="img/c-liogo3.png" alt=""></a></li>
-      <li><a href="javascript:void(0)"><img src="img/c-liogo5.png" alt=""></a></li>
-    </ul>
-  </div>
-</div>
-<!--c-logo-part-end-->
-<section class="main-section team" id="team"><!--main-section team-start-->
-  <div class="container">
-    <h2>NUESTRO EQUIPO</h2>
-    <h6>Somos un equipo de tres colegas, que comparte la mísma visión del proyecto GRUNIV.</h6>
-    <div class="team-leader-block clearfix">
-      <div class="team-leader-box">
-        <div class="team-leader wow fadeInDown delay-03s">
-          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/isaac.jpg" alt="">
-          <ul>
-            <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-            <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-            <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-          </ul>
-        </div>
-        <h3 class="wow fadeInDown delay-03s">Isaac González</h3>
-        <span class="wow fadeInDown delay-03s">Fundador, Desarrollador & Diseñador</span>
-        <p class="wow fadeInDown delay-03s"></p>
-      </div>
-      <div class="team-leader-box">
-        <div class="team-leader  wow fadeInDown delay-06s">
-          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/hector.jpg" alt="">
-          <ul>
-            <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-            <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-            <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-          </ul>
-        </div>
-        <h3 class="wow fadeInDown delay-06s">Héctor Burgos</h3>
-        <span class="wow fadeInDown delay-06s">Co-Fundador, Recursos Humanos</span>
-        <p class="wow fadeInDown delay-06s"></p>
-      </div>
-      <div class="team-leader-box">
-        <div class="team-leader wow fadeInDown delay-09s">
-          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-          <img src="img/sergio.jpg" alt="">
-          <ul>
-            <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-            <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-            <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-          </ul>
-        </div>
-        <h3 class="wow fadeInDown delay-09s">Sergio Millán</h3>
-        <span class="wow fadeInDown delay-09s">Co-Fundador, Marketing</span>
-        <p class="wow fadeInDown delay-09s"></p>
-      </div>
-    </div>
-  </div>
-</section>
-<!--main-section team-end-->
-
-<section class="twitter-feed"><!--twitter-feed-->
-  <div class="container  animated fadeInDown delay-07s wow">
-    <div class="twitter_bird"><span><i class="fa-twitter"></i></span></div>
-    <p> Si supiera que el mundo se acaba mañana, yo, hoy todavía, plantaría un árbol. - @MartinLutherKing</p>
-    <span>Hace 28 minutos</span> </div>
-</section>
-<!--twitter-feed-end-->
-<footer class="footer_section" id="contact">
-  <div class="container">
-    <section class="main-section contact" id="contact">
-      <div class="contact_section">
-        <h2>Contacto</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="contact_block">
-              <div class="contact_block_icon rollIn animated wow"><span><i class="fa-home"></i></span></div>
-              <span> Mérida, Yucatán<br>
-              México </span> </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="contact_block">
-              <div class="contact_block_icon icon2 rollIn animated wow"><span><i class="fa-phone"></i></span></div>
-              <span> 1-800-GRUNIV </span> </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="contact_block">
-              <div class="contact_block_icon icon3 rollIn animated wow"><span><i class="fa-pencil"></i></span></div>
-              <span> <a href="mailto:hello@butterfly.com"> info@gruniv.com</a> </span> </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 wow fadeInLeft">
-          <div class="contact-info-box address clearfix">
-            <h3>¡Queremos escucharte!</h3>
-            <p>Escribenos si tienes alguna duda o sugerencia para mejorar la manera en como GRUNIV se desarrolla, ó simplemente para saludar.</p>
-            <p>Cualquier aclaración ó mal entendido, estamos para ayudarte.</p>
-          </div>
-          <ul class="social-link">
-            <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa-twitter"></i></a></li>
-            <li class="facebook animated bounceIn wow delay-03s"><a href="javascript:void(0)"><i class="fa-facebook"></i></a></li>
-            <li class="pinterest animated bounceIn wow delay-04s"><a href="javascript:void(0)"><i class="fa-pinterest"></i></a></li>
-            <li class="gplus animated bounceIn wow delay-05s"><a href="javascript:void(0)"><i class="fa-google-plus"></i></a></li>
-            <li class="dribbble animated bounceIn wow delay-06s"><a href="javascript:void(0)"><i class="fa-dribbble"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-lg-6 wow fadeInUp delay-06s">
-          <div class="form">
-            <input class="input-text animated wow flipInY delay-02s" type="text" name="" value="Nombre *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <input class="input-text animated wow flipInY delay-04s" type="text" name="" value="Correo *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <textarea class="input-text text-area animated wow flipInY delay-06s" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Escribe un mensaje *</textarea>
-            <input class="input-btn animated wow flipInY delay-08s" type="submit" value="Enviar">
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div class="container">
-    <div class="footer_bottom"> <span>Copyright © 2015 GRUNIV By <a href="http://www.lixet.com"> LIXET</a>. </span> </div>
-  </div>
-</footer>
-<script type="text/javascript">
-    $(document).ready(function(e) {
-        $('#header_outer').scrollToFixed();
-        $('.res-nav_click').click(function(){
-            $('.main-nav').slideToggle();
-            return false    
-            
-        });
-        
-    });
-</script> 
-<script>
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100
-      }
-    );
-    wow.init();
-    document.getElementById('').onclick = function() {
-      var section = document.createElement('section');
-      section.className = 'wow fadeInDown';
-	  section.className = 'wow shake';
-	  section.className = 'wow zoomIn';
-	  section.className = 'wow lightSpeedIn';
-      this.parentNode.insertBefore(section, this);
-    };
-  </script> 
-<script type="text/javascript">
-	$(window).load(function(){
-		
-		$('a').bind('click',function(event){
-			var $anchor = $(this);
-			
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top - 91
-			}, 1500,'easeInOutExpo');
-			/*
-			if you don't want to use the easing effects:
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1000);
-			*/
-			event.preventDefault();
-		});
-	})
-</script> 
-
-<!--<script type="text/javascript">
-
-$(window).load(function(){
-  
-  
-  var $container = $('.portfolioContainer'),
-      $body = $('body'),
-      colW = 350,
-      columns = null;
-
-  
-  $container.isotope({
-    // disable window resizing
-    resizable: true,
-    masonry: {
-      columnWidth: colW
-    }
-  });
-  
-  $(window).smartresize(function(){
-    // check if columns has changed
-    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
-    if ( currentColumns !== columns ) {
-      // set new column count
-      columns = currentColumns;
-      // apply width to container manually, then trigger relayout
-      $container.width( columns * colW )
-        .isotope('reLayout');
-    }
-    
-  }).smartresize(); // trigger resize to set container width
-  $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-			
-            filter: selector,
-         });
-         return false;
-    });
-  
-});
-
-</script>
-
-
---> 
-
-<script type="text/javascript">
-
    
-  jQuery(document).ready(function($){     
-// Portfolio Isotope
-	var container = $('#portfolio-wrap');	
-	
+    <header>
+        
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="fa fa-bars fa-lg"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/freeze/logo.png" alt="" class="logo">
+                        </a>
+                    </div>
 
-	container.isotope({
-		animationEngine : 'best-available',
-	  	animationOptions: {
-	     	duration: 200,
-	     	queue: false
-	   	},
-		layoutMode: 'fitRows'
-	});	
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-	$('#filters a').click(function(){
-		$('#filters a').removeClass('active');
-		$(this).addClass('active');
-		var selector = $(this).attr('data-filter');
-	  	container.isotope({ filter: selector });
-        setProjects();		
-	  	return false;
-	});
-		
-		
-		function splitColumns() { 
-			var winWidth = $(window).width(), 
-				columnNumb = 1;
-			
-			
-			if (winWidth > 1024) {
-				columnNumb = 4;
-			} else if (winWidth > 900) {
-				columnNumb = 2;
-			} else if (winWidth > 479) {
-				columnNumb = 2;
-			} else if (winWidth < 479) {
-				columnNumb = 1;
-			}
-			
-			return columnNumb;
-		}		
-		
-		function setColumns() { 
-			var winWidth = $(window).width(), 
-				columnNumb = splitColumns(), 
-				postWidth = Math.floor(winWidth / columnNumb);
-			
-			container.find('.portfolio-item').each(function () { 
-				$(this).css( { 
-					width : postWidth + 'px' 
-				});
-			});
-		}		
-		
-		function setProjects() { 
-			setColumns();
-			container.isotope('reLayout');
-		}		
-		
-		container.imagesLoaded(function () { 
-			setColumns();
-		});
-		
-	
-		$(window).bind('resize', function () { 
-			setProjects();			
-		});
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#about">gruniv</a>
+                            </li>
+                            <li><a href="#features">carácteristicas</a>
+                            </li>
+                            <li><a href="#reviews">reseñas</a>
+                            </li>
+                            <li><a href="#screens">fotos</a>
+                            </li>
+                            <li><a href="#demo">demo</a>
+                            </li>
+                            <li><a class="getApp" href="#getApp">app</a>
+                            </li>
+                            <li><a href="#support">contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-->
+        </nav>
 
-});
-$( window ).load(function() {
-	jQuery('#all').click();
-	return false;
-});
-</script>
+        
+        <!--RevSlider-->
+        <div class="tp-banner-container">
+            <div class="tp-banner" >
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                        <!-- MAIN IMAGE -->
+                        <img src="img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption lfl fadeout hidden-xs"
+                            data-x="left"
+                            data-y="bottom"
+                            data-hoffset="30"
+                            data-voffset="0"
+                            data-speed="500"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="img/freeze/Slides/hand-freeze.png" alt="">
+                        </div>
+
+                        <div class="tp-caption lfl fadeout visible-xs"
+                            data-x="left"
+                            data-y="center"
+                            data-hoffset="700"
+                            data-voffset="0"
+                            data-speed="500"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="img/freeze/iphone-freeze.png" alt="">
+                        </div>
+
+                        <div class="tp-caption large_white_bold sft" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
+                            Gruniv
+                        </div>
+                        <div class="tp-caption large_white_light sfr" data-x="770" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1400" data-easing="Power4.easeOut">
+                            App
+                        </div>
+                        <div class="tp-caption large_white_light sfb" data-x="550" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
+                            Bienvenido
+                        </div>
+
+                        <div class="tp-caption sfb hidden-xs" data-x="550" data-y="center" data-hoffset="0" data-voffset="85" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
+                            <a href="#about" class="btn btn-primary inverse btn-lg">Aprende más</a>
+                        </div>
+                        <div class="tp-caption sfr hidden-xs" data-x="730" data-y="center" data-hoffset="0" data-voffset="85" data-speed="1500" data-start="1900" data-easing="Power4.easeOut">
+                            <a href="#getApp" class="btn btn-default btn-lg">Descargar</a>
+                        </div>
+
+                    </li>
+                    <!-- SLIDE 2 -->
+                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+                        <!-- MAIN IMAGE -->
+                        <img src="img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption lfb fadeout hidden-xs"
+                            data-x="center"
+                            data-y="bottom"
+                            data-hoffset="0"
+                            data-voffset="0"
+                            data-speed="1000"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="img/freeze/Slides/freeze-slide2.png" alt="">
+                        </div>
+
+                        
+                        <div class="tp-caption large_white_light sft" data-x="center" data-y="250" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                            Descubre & Recuerda el momento <i class="fa fa-heart"></i>
+                        </div>
+                        
+                        
+                    </li>
+
+                    <!-- SLIDE 3 -->
+                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+                        <!-- MAIN IMAGE -->
+                        <img src="img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                    
+
+                        <div class="tp-caption lfb visible-xs" data-x="center" data-y="center" data-hoffset="0" data-voffset="400" data-speed="1000" data-start="1200" data-easing="Power4.easeOut">
+                            <a href="#" class="btn btn-primary inverse btn-lg">Descargar</a>
+                        </div>
+
+                        
+                        <div class="tp-caption mediumlarge_light_white sfl hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="-50" data-speed="1000" data-start="1000" data-easing="Power4.easeOut">
+                           Gruniv App
+                        </div>
+                        <div class="tp-caption mediumlarge_light_white sft hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1200" data-easing="Power4.easeOut">
+                           ¡Explora y recomienda como nunca antes!
+                        </div>
+                        <div class="tp-caption small_light_white sfb hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="80" data-speed="1000" data-start="1600" data-easing="Power4.easeOut">
+                           <p>¿Te gusta la comida mexicana?, ¿la italiana? ó ¿simplemente salir a correr por la mañana en aquella avenida de siempre? <br> ¡Gruniv te ayuda a seguir haciendolo, mientras rompes la rutina y conoces nuevos lugares que las personas que viven en tu ciudad recomiendan! <br> y además puedes recomendar también los lugares que frecuentas, pudiendo así invitar a más atletas para que se unan a tu rutina de ejercicios ó<br> apoyar con más clientes a ese restaurante que tanto aprecias. ;^) <br> </p>
+                        </div>
+
+                        <div class="tp-caption lfl hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="160" data-speed="1000" data-start="1800" data-easing="Power4.easeOut">
+                            <a href="#getApp" class="btn btn-primary inverse btn-lg">Descargar</a>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <div class="wrapper">
+
+        
+
+        <section id="about">
+            <div class="container">
+                
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>¿Qué es?</h1>
+                    <div class="divider"></div>
+                    <p>Gruniv es una aplicación que está pensada para los apasionados, aquellos que disfrutan cada momento del día, para los corazones rotos que siempre están dispuestos a una taza de café con los amigos, para los intrépidos que anhelan las virtudes de la aventura, así como los valientes que alzan la voz por una causa justa, en otras palabras, <br> está pensada para tí.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="about-item scrollpoint sp-effect2">
+                            <i class="fa fa-tasks fa-2x"></i>
+                            <h3>Seguro & Fácil</h3>
+                            <p>No requieres más que un correo eléctronico para comenzar a utilizar Gruniv, y no te pediremos más información personal de la necesaria para nuestros registros.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa fa-mobile fa-2x"></i>
+                            <h3>Móvil</h3>
+                            <p>Al ser una aplicación móvil, podrás accesar al contenido de Gruniv desde cualquier lugar siempre que tengas acceso a internet.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa fa-users fa-2x"></i>
+                            <h3>Conecta</h3>
+                            <p>Descubre y comparte ubicaciones sobre restaurantes, tiendas ó eventos importantes que sucedan en tu ciudad. Además de poder opinar sobre lo que otros recomiendan.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect1">
+                            <i class="fa fa-bullhorn fa-2x"></i>
+                            <h3>No Ads</h3>
+                            <p>¡Gruniv es un App gratuita, pero no por ello un periódico de clasificados! Creemos que existén otras opciones distintas a la publicidad pagada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>Carácteristicas</h1>
+                    <div class="divider"></div>
+                    <p>¡Mirá lo que puedes hacer con Gruniv!</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 scrollpoint sp-effect1">
+                        <div class="media media-left feature">
+                            <a class="pull-right" href="#">
+                                <i class="fa fa-cogs fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Opciones</h3>
+                                Puedes editar tu perfil, cuenta y privacidad.
+                            </div>
+                        </div>
+                        <div class="media media-left feature">
+                            <a class="pull-right" href="#">
+                                <i class="fa fa-rocket fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Descubre</h3>
+                                Explora y conoce lugares de tu interés.
+                            </div>
+                        </div>
+                        <div class="media media-left feature">
+                            <a class="pull-right" href="#">
+                                <i class="fa fa-users fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Seguidores</h3>
+                                Consigue que otros usuarios sigan tus recomendaciones.
+                            </div>
+                        </div>
+                        <div class="media media-left feature">
+                            <a class="pull-right" href="#">
+                                <i class="fa fa-comments fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Opina y recomienda</h3>
+                                Comenta las recomendaciones de otros.
+                            </div>
+                        </div>
+                        <div class="media media-left feature">
+                            <a class="pull-right" href="#">
+                                <i class="fa fa-calendar fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Eventos</h3>
+                                Invita y participa en eventos de tu localidad.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4" >
+                        <img src="img/freeze/iphone-freeze.png" class="img-responsive scrollpoint sp-effect5" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-4 scrollpoint sp-effect2">
+                        <div class="media feature">
+                            <a class="pull-left" href="#">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Ubicaciones</h3>
+                                Consigue direcciones exactas mediante Google maps, a lugares ó eventos recomendados.
+                            </div>
+                        </div>
+                        <div class="media feature">
+                            <a class="pull-left" href="#">
+                                <i class="fa fa-film fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Videos</h3>
+                                Graba videos de hasta 20 segundos, para invitar a conocer los sitios que recomiendas.
+                            </div>
+                        </div>
+                        <div class="media feature">
+                            <a class="pull-left" href="#">
+                                <i class="fa fa-compass fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Local</h3>
+                                Recibe sólo recomendaciones que estén cerca de tu localidad, y deja que Gruniv actualice tu ubicación de manera instantánea.
+                            </div>
+                        </div>
+                        <div class="media feature">
+                            <a class="pull-left" href="#">
+                                <i class="fa fa-repeat fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">Girar</h3>
+                                Dale en 'girar' a las recomendaciones que te han gustado, y así tus seguidores podrán conocerlas también.
+                            </div>
+                        </div>
+                        <div class="media active feature">
+                            <a class="pull-left" href="#">
+                                <i class="fa fa-plus fa-2x"></i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">& mucho más</h3>
+                                ¡Permitenos sorprenderte!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <div class="container">
+                <div class="section-heading inverse scrollpoint sp-effect3">
+                    <h1>Reseñas</h1>
+                    <div class="divider"></div>
+                    <p>La satisfación de los usuarios, es nuestra prioridad; Conoce lo que dijeron nuestros primeros usuarios.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-push-1 scrollpoint sp-effect3">
+                        <div class="review-filtering">
+                            <div class="review">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="review-person">
+                                            <img src="img/freeze/screens/pj1.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="review-comment">
+                                         <h3>“La interfaz de usuario es bastante amigable, sin dudas es una plataforma útil para los estudiantes y puede ser una alternativa a las que ya existen.”</h3>
+                                            <p>
+                                                - Veronica Arias
+                                                <span>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star-o fa-lg"></i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review rollitin">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="review-person">
+                                            <img src="img/freeze/screens/pj2.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="review-comment">
+                                            <h3>“Es una App con muchísimo potencial, muy didáctica de lo que fueron alguna vez esta clase de aplicaciones en sus comienzos, me siento cómodo y la aplicación es muy intuitiva.”</h3>
+                                            <p>
+                                                - Samuel Pulido
+                                                <span>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star-half-o fa-lg"></i>
+                                                    <i class="fa fa-star-o fa-lg"></i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review rollitin">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="review-person">
+                                            <img src="img/freeze/screens/pj3.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="review-comment">
+                                            <h3>“Excelente applicación, la recomiendo en un 100%.”</h3>
+                                            <p>
+                                                - Héctor Burgos
+                                                <span>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                    <i class="fa fa-star fa-lg"></i>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="screens">
+            <div class="container">
+
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>Fotos</h1>
+                    <div class="divider"></div>
+                    <p>¡Así se ve la interfaz de Gruniv!</p>
+                </div>
+
+                <div class="filter scrollpoint sp-effect3">
+                    <a href="javascript:void(0)" class="button js-filter-all active">General</a>
+                    <a href="javascript:void(0)" class="button js-filter-one">Usuario</a>
+                    <a href="javascript:void(0)" class="button js-filter-two">Conecta</a>
+                    <a href="javascript:void(0)" class="button js-filter-three">Videos</a>
+                </div>
+                <div class="slider filtering scrollpoint sp-effect5" >
+                    <div class="two">
+                        <img src="img/freeze/screens/profile.jpg" alt="">
+                        <h4>Perfil</h4>
+                    </div>
+                    <div class="two">
+                        <img src="img/freeze/screens/menu.jpg" alt="">
+                        <h4>Descubre</h4>
+                    </div>
+                    <div class="two">
+                        <img src="img/freeze/screens/weather.jpg" alt="">
+                        <h4>Menu dezpegable</h4>
+                    </div>
+                    <div class="one">
+                        <img src="img/freeze/screens/signup.jpg" alt="">
+                        <h4>Inicio</h4>
+                    </div>
+                    <div class="three">
+                        <img src="img/freeze/screens/calendar.jpg" alt="">
+                        <h4>Cámara</h4>
+                    </div>
+                    <div class="one">
+                        <img src="img/freeze/screens/options.jpg" alt="">
+                        <h4>Registro</h4>
+                    </div>
+                    <div class="three">
+                        <img src="img/freeze/screens/sales.jpg" alt="">
+                        <h4>Recomendar</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>Demo</h1>
+                    <div class="divider"></div>
+                    <p>Próximamente.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 scrollpoint sp-effect2">
+                        <div class="video-container" >
+                            <iframe src=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="getApp">
+            <div class="container-fluid">
+                <div class="section-heading inverse scrollpoint sp-effect3">
+                    <h1>Gruniv App</h1>
+                    <div class="divider"></div>
+                    <p>Selecciona tu plataforma, y descarga el App.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+       
+                        <div class="platforms">
+                            <a href="#" class="btn btn-primary inverse scrollpoint sp-effect1">
+                                <i class="fa fa-android fa-3x pull-left"></i>
+                                <span>Próximamente</span><br>
+                                <b>Android</b>
+                            </a>
+                            
+                                <a href="#" class="btn btn-primary inverse scrollpoint sp-effect2">
+                                    <i class="fa fa-apple fa-3x pull-left"></i>
+                                    <span>Próximamente</span><br>
+                                    <b>iOS</b>
+                                </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </section>
+
+        <section id="support" class="doublediagonal">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>Contacto</h1>
+                    <div class="divider"></div>
+                    <p>Si tienes alguna duda o sugerencia, contáctanos.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-8 scrollpoint sp-effect1">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Correo">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea cols="30" rows="10" class="form-control" placeholder="Escribe un mensaje..."></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                </form>
+                            </div>
+                            <div class="col-md-4 col-sm-4 contact-details scrollpoint sp-effect2">
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-map-marker fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Mérida, Yucatán MX</h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-envelope fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">
+                                            <a href="mailto:support@oleose.com">contacto@gruniv.com</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left" href="#" >
+                                        <i class="fa fa-phone fa-2x"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Pendiente</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <a href="#" class="scrollpoint sp-effect3">
+                    <img src="img/freeze/logo.png" alt="" class="logo">
+                </a>
+                <div class="social">
+                    <a href="https://twitter.com/GRUNIVcom" class="scrollpoint sp-effect3"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a href="#" class="scrollpoint sp-effect3"><i class="fa fa-google-plus fa-lg"></i></a>
+                    <a href="https://m.facebook.com/profile.php?id=675907845869787" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/company/9452394" class="scrollpoint sp-effect3"><i class="fa fa-linkedin fa-lg"></i></a>
+                </div>
+                <div class="rights">
+                    <p>Gruniv Copyright &copy; 2015</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/placeholdem.min.js"></script>
+    <script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            appMaster.preLoader();
+        });
+    </script>
+
 </body>
-<% end %>
+
 </html>
