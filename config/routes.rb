@@ -20,5 +20,5 @@ Rails.application.routes.draw do
   authenticated :user do
   root 'links#index', as: "authenticated_root"
 end
-  root 'pages#home'
+  root 'index'
 end
